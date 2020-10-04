@@ -2,31 +2,607 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portal de Notícias</title>
+  <title>Portal de Filmes</title>
 
-  <!-- CSS only -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./styles.css">
 
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </div>
+<body class="grey darken-4">
+  <nav>
+    <div class="nav-wrapper red accent-4">
+      <a href="#" class="brand-logo">Moviefy</a>
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#lancamentos">Lançamentos</a></li>
+        <li><a href="#destaques">Em destaque</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#entrevistas">Entrevistas & Making of</a></li>
+        <li><a href="#novidades">Novidades</a></li>
+        <li style="padding-right: 1vw; padding-left: 1vw;">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s8">
+                <input placeholder="Procurar Filme" class="nav-search" type="text" class="validate">
+              </div>
+              <div class="col s4" style="text-align: center;">
+                <a href="#"><i class="material-icons">search</i></a>
+              </div>
+            </div>
+          </form>
+        </li>
+      </ul>
     </div>
   </nav>
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="#lancamentos">Lançamentos</a></li>
+    <li><a href="#destaques">Em destaque</a></li>
+    <li><a href="#avaliacoes">Avaliações</a></li>
+    <li><a href="#entrevistas">Entrevistas & Making of</a></li>
+    <li><a href="#novidades">Novidades</a></li>
+    <li>
+      <form>
+        <div class="row" style="margin-left: 3vw;">
+          <div class="input-field col s9">
+            <input placeholder="Procurar Filme" class="nav-search" type="text" class="validate">
+          </div>
+          <div class="col s3" style="margin-top: 2em">
+            <a href="#"><i class="material-icons" style="color: black">search</i></a>
+          </div>
+        </div>
+      </form>
+    </li>
+  </ul>
+
+
+  <div class="conteiner">
+    <div class="row">
+      <div class="col s12 section-title">
+        <h4 id="lancamentos">
+          Lançamentos
+        </h4>
+      </div>
+      <div class="carousel carousel-slider center">
+        <div class="carousel-item" href="#one!">
+          <div class="row">
+            <div class="col s6">
+              <iframe
+                class="lancamentos"
+                src="https://www.youtube.com/embed/rcV1I-397Wg"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col s6 movie-info">
+              <h2>Enola Homes</h2>
+              <p>
+                <b>Sinopse: </b>
+                Enola Holmes (Millie Bobby Brown) é uma menina adolescente cujo irmão, 20 anos mais velho, é o renomado detetive Sherlock Holmes (Henry Cavill). Quando sua mãe (Helena Bonham Carter) desaparece, fugindo do confinamento da sociedade vitoriana e deixando dinheiro para trás para que Enola faça o mesmo, a menina inicia uma investigação para descobrir o paradeiro dela.
+              </p>
+              <p>
+                <b>Direção: </b>
+                Harry Bradbeer
+              </p>
+              <p>
+                <b>Elenco: </b>
+                Millie Bobby Brown, Henry Cavill, Sam Claflin
+              </p>
+              <p>
+                <b>Avaliação: </b>
+              </p>
+              <p>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: darkgrey">star</i>
+                <i class="material-icons" style="color: darkgrey">star</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" href="#two!">
+          <div class="row">
+            <div class="col s6">
+              <iframe
+                class="lancamentos"
+                src="https://www.youtube.com/embed/zQEjE_M2Esw"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col s6 movie-info">
+              <h2>Sonic - O Filme</h2>
+              <p>
+                <b>Sinopse: </b>
+                Nos seus primeiros anos de vida, Sonic veio de uma ilha com um padrão quadriculado na borda de suas paredes, além de características ambientais como palmeiras, loops verticais e cascatas. Além disso, Sonic é criado por sua zeladora, Longclaw, que o encoraja a esconder seus poderes, mas Sonic não escuta. Os dois são então atacados por uma tribo de equidnas; depois que uma equidna golpeia e fere Longclaw, ela dá a Sonic um saco de anéis que ele pode usar para viajar para outros locais.
+              </p>
+              <p>
+                <b>Direção: </b>
+                Jeff Fowler
+              </p>
+              <p>
+                <b>Elenco: </b>
+                James Marsden, Ben Schwartz, Tika Sumpter, Jim Carrey
+              </p>
+              <p>
+                <b>Avaliação: </b>
+              </p>
+              <p>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: darkgrey">star</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" href="#three!">
+          <div class="row">
+            <div class="col s6">
+              <iframe
+                class="lancamentos"
+                src="https://www.youtube.com/embed/b15_u5wYB0I"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col s6 movie-info">
+              <h2>Scooby! O Filme</h2>
+              <p>
+                <b>Sinopse: </b>
+                SCOOBY! O Filme é uma história de origem dos famosos personagens da série animada da Hanna Barbera. Salsicha e Scooby tem uma conexão instantânea envolvendo comida em seu primeiro encontro, e logo se unem aos jovens detetives Fred, Velma e Daphne para formar a Mistério S/A.
+              </p>
+              <p>
+                <b>Direção: </b>
+                Tony Cervone
+              </p>
+              <p>
+                <b>Elenco: </b>
+                Frank Welker, Will Forte, Zac Efron
+              </p>
+              <p>
+                <b>Avaliação: </b>
+              </p>
+              <p>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: yellow">star</i>
+                <i class="material-icons" style="color: darkgrey">star</i>
+                <i class="material-icons" style="color: darkgrey">star</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row section-title">
+        <h4 id="destaques">
+          Destaques
+        </h4>
+      </div>
+
+      <div class="row">
+        <div class="col l4 offset-l8 m6 offset-m6 s12 input-field">
+          <select class="select">
+            <option value="" selected>Categoria</option>
+            <option value="1">Ação</option>
+            <option value="2">Aventura</option>
+            <option value="3">Terror</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6 l4 xl2">
+          <img class="movie-poster" src="http://www.cfnoticias.com.br/wp-content/uploads/2020/03/scooby-o-filme-novo-poster-0403-e1583364810330.jpg" alt="Scooby">
+        </div>
+        <div class="col s12 m6 l4 xl2">
+          <img src="https://i0.wp.com/i.imgur.com/P8ZD2Oc.jpg?w=696&ssl=1" alt="Enola Homes" class="movie-poster">
+        </div>
+        <div class="col s12 m6 l4 xl2">
+          <img src="https://m.media-amazon.com/images/M/MV5BZmE1NmVmN2EtMjZmZC00YzAyLWE4MWEtYjY5YmExMjUxODU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="The Devil All The Time" class="movie-poster">
+        </div>
+        <div class="col s12 m6 l4 xl2">
+          <img src="https://cdn.collider.com/wp-content/uploads/2020/08/im-thinking-of-ending-things-poster-jessie-buckley-405x600.jpeg" alt="i'm thinking of ending things" class="movie-poster">
+        </div>
+        <div class="col s12 m6 l4 xl2">
+          <img src="https://br.web.img3.acsta.net/pictures/20/05/27/08/29/4788868.jpg" alt="#Alive" class="movie-poster">
+        </div>
+        <div class="col s12 m6 l4 xl2">
+          <img src="https://br.web.img2.acsta.net/pictures/20/08/03/13/35/5418342.jpg" alt="Kajillionaire" class="movie-poster">
+        </div>
+      </div>
+
+      <div class="col l2 offset-l10 m4 offset-m8 s12">
+        <a class="waves-effect waves-light btn red accent-4" style="width: 100%;">Carregar Mais</a>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="row section-title">
+        <h4 id="avaliacoes">Últimas Avaliações</h4>
+      </div>
+      <div class="row">
+        <div class="col m4 s12">
+          <div class="card horizontal grey darken-3 white-text">
+            <div class="card-image">
+              <img src="https://pbs.twimg.com/profile_images/1117934641913008128/k6Z1lEOv_400x400.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <b>Christy Lemire</b>
+                <p>
+                  <b>Filme: </b>
+                  Enola Holmes
+                </p>
+                <p>
+                  <b>Avaliação: </b>
+                  [Millie Bobby Brown] is a delight. She gets to be joyful and she is just radiant, effervescent, and has incredible comic timing.
+                </p>
+                <p>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: darkgrey">star</i>
+                </p>
+              </div>
+              <div class="card-action red accent-4">
+                <a
+                  href="https://www.scpr.org/programs/filmweek/2020/09/25/66056/filmweek-kajillionaire-enola-holmes-misbehaviour-a/"
+                  target="_blank"
+                  class="white-text"
+                >Ler Review Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m4 s12">
+          <div class="card horizontal grey darken-3 white-text">
+            <div class="card-image">
+              <img src="https://static.wixstatic.com/media/d1ce1d_67c76e44f5f04007aff10f84de73ddf2~mv2.jpg/v1/fill/w_500,h_500,al_c,q_90/d1ce1d_67c76e44f5f04007aff10f84de73ddf2~mv2.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <b>Clarisse Loughrey</b>
+                <p>
+                  <b>Filme: </b>
+                  O Diabo de Cada Dia
+                </p>
+                <p>
+                  <b>Avaliação: </b>
+                  When The Devil All the Time does plunge into the moral abyss, it's intoxicating -- if only it did it more often.
+                </p>
+                <p>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: darkgrey">star</i>
+                  <i class="material-icons" style="color: darkgrey">star</i>
+                </p>
+              </div>
+              <div class="card-action red accent-4">
+                <a
+                  href="https://www.independent.co.uk/arts-entertainment/films/reviews/devil-all-time-netflix-review-tom-holland-robert-pattinson-b448316.html"
+                  target="_blank"
+                  class="white-text"
+                >Ler Review Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m4 s12">
+          <div class="card horizontal grey darken-3 white-text">
+            <div class="card-image">
+              <img src="https://pbs.twimg.com/profile_images/913230218286043136/Cj2_Q9pc_400x400.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <b>Phil Guie</b>
+                <p>
+                  <b>Filme: </b>
+                  The Garden Left Behind
+                </p>
+                <p>
+                  <b>Avaliação: </b>
+                  First-time feature director Flavio Alves depicts his main protagonist's existence as challenging and uncertain, but not oppressive.
+                </p>
+                <p>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: yellow">star</i>
+                  <i class="material-icons" style="color: darkgrey">star</i>
+                </p>
+              </div>
+              <div class="card-action red accent-4">
+                <a
+                  href="http://film-forward.com/dvdon-demand/the-garden-left-behind"
+                  target="_blank"
+                  class="white-text"
+                >Ler Review Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col l2 offset-l10 m4 offset-m8 s12">
+          <a class="waves-effect waves-light btn red accent-4" style="width: 100%;">Carregar Mais</a>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="row">
+    <div class="row section-title">
+      <h4 id="entrevistas">Entrevistas</h4>
+    </div>
+
+    <div class="row">
+      <div class="col m4 s12">
+        <div class="card grey darken-3 white-text">
+          <div class="card-image">
+            <iframe
+              class="entrevistas"
+              src="https://www.youtube.com/embed/K-gPD00ksxQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="card-content">
+            <p>
+              <b>Filme: </b>
+              Divertidamente
+            </p>
+            <p>
+              <b>Diretor: </b>
+              Pete Docter
+            </p>
+            <p>
+              <b>Estreia: </b>
+              2015
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col m4 s12">
+        <div class="card grey darken-3 white-text">
+          <div class="card-image">
+            <iframe
+              class="entrevistas"
+              src="https://www.youtube.com/embed/NONyk_kzYqo"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="card-content">
+            <p>
+              <b>Filme: </b>
+              Enola Holmes
+            </p>
+            <p>
+              <b>Diretor: </b>
+              Harry Bradbeer
+            </p>
+            <p>
+              <b>Estreia: </b>
+              2020
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col m4 s12">
+        <div class="card grey darken-3 white-text">
+          <div class="card-image">
+            <iframe
+              class="entrevistas"
+              src="https://www.youtube.com/embed/E3LR9A7J4Wc"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="card-content">
+            <p>
+              <b>Filme: </b>
+              Sonic
+            </p>
+            <p>
+              <b>Diretor: </b>
+              Jeff Fowler
+            </p>
+            <p>
+              <b>Estreia: </b>
+              2020
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l2 offset-l10 m4 offset-m8 s12">
+        <a class="waves-effect waves-light btn red accent-4" style="width: 100%;">Carregar Mais</a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="row">
+    <div class="row section-title">
+      <h4 id="novidades">Novidades</h4>
+    </div>
+
+    <div class="row">
+      <div class="col m8 s12">
+        <div style="margin-left: 0.5vw;">
+          <div class="row">
+            <div class="card horizontal grey darken-3 white-text">
+              <div class="card-image">
+                <img src="http://br.web.img3.acsta.net/r_640_360/newsv7/20/10/02/21/13/0205660.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>The Boys: Quem é responsável pelo chocante final do episódio 7?</h5>
+                  <p>
+                    Que The Boys é cheia de reviravoltas absurdas, todo mundo já sabe. Mas o recente episódio da série produzida pela Amazon Prime Video ultrapassou todos os limites. Afinal, cabeças literalmente explodiram, deixando os personagens (e os espectadores) boquiabertos! Então, chegou a hora de especular quem é responsável pelo massacre da trama!
+                  </p>
+                  <p>
+                    <span class="new badge red accent-4" data-badge-caption="SÉRIES"></span>
+                    <span class="new badge red accent-4" data-badge-caption="AMAZON PRIME"></span>
+                    <span class="new badge red accent-4" data-badge-caption="THE BOYZ"></span>
+                  </p>
+                </div>
+                <div class="card-action red accent-4">
+                  <a
+                    href="http://www.adorocinema.com/noticias/series/noticia-156199/"
+                    target="_blank"
+                    class="white-text"
+                  >Ler Notícia Completa</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card horizontal grey darken-3 white-text">
+              <div class="card-image">
+                <img src="http://br.web.img2.acsta.net/r_640_360/newsv7/20/10/02/19/31/2895920.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Festival De Volta Para o Cinema chega ao Rio de Janeiro</h5>
+                  <p>
+                    O Festival De Volta Para o Cinema chegou à capital do Rio de Janeiro. Cerca de 18 salas estão sendo reabertas ao público carioca desde quinta-feira, 1º de outubro. Isso faz parte do projeto #JuntosPeloCinema, idealizado por Érico Borgo, em parceria com estúdios, exibidores, produtores e curadores.
+                  </p>
+                  <p>
+                    <span class="new badge red accent-4" data-badge-caption="FESTIVAL"></span>
+                    <span class="new badge red accent-4" data-badge-caption="RIO DE JANEIRO"></span>
+                    <span class="new badge red accent-4" data-badge-caption="CINEMA"></span>
+                  </p>
+                </div>
+                <div class="card-action red accent-4">
+                  <a
+                    href="http://www.adorocinema.com/noticias/filmes/noticia-156195/"
+                    target="_blank"
+                    class="white-text"
+                  >Ler Notícia Completa</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card horizontal grey darken-3 white-text">
+              <div class="card-image">
+                <img src="http://br.web.img2.acsta.net/r_640_360/newsv7/20/10/02/08/21/2378066.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Lançamentos da Netflix nesta semana (02/10 a 08/10)</h5>
+                  <p>
+                    Tem filme novo do Adam Sandler chegando no catálogo da Netflix. O Halloween do Hubie — dirigido por Steven Brill (Um Diabo Diferente) acompanha um homem medroso que precisa salvar a sua cidade de ameaças sobrenaturais durante o Dia das Bruxas.
+                  </p>
+                  <p>
+                    <span class="new badge red accent-4" data-badge-caption="NETFLIX"></span>
+                    <span class="new badge red accent-4" data-badge-caption="LANÇAMENTOS"></span>
+                    <span class="new badge red accent-4" data-badge-caption="FILMES E SERIES"></span>
+                  </p>
+                </div>
+                <div class="card-action red accent-4">
+                  <a
+                    href="http://www.adorocinema.com/noticias/filmes/noticia-156188/"
+                    target="_blank"
+                    class="white-text"
+                  >Ler Notícia Completa</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col m4 s12">
+        <div class="row section-title" style="text-align: start; margin-left: 0.5vw;">
+          <h5>
+            Sobre
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda quod quia voluptates eum quam totam cum commodi, consequatur aliquam at dignissimos delectus numquam. Autem laudantium quas ipsum possimus impedit?
+          </p>
+          <h5>
+            Editorial
+          </h5>
+          <p>
+            <b>
+              Redação:
+            </b>
+              Gabriel Carneiro de Castro
+          </p>
+          <p>
+            <b>
+              Pesquisa:
+            </b>
+              Gabriel Carneiro de Castro
+          </p>
+          <p>
+            <b>
+              Gerência Geral:
+            </b>
+              Gabriel Carneiro de Castro
+          </p>
+        </div>
+        <div class="row section-title" style="text-align: start; margin-left: 0.5vw;">
+          <h5>
+            Redes Sociais
+          </h5>
+          <p>
+            Facebook
+            <span style="margin-left: 1em; margin-right: 1em;">
+              /
+            </span>
+            Twitter
+            <span style="margin-left: 1em; margin-right: 1em;">
+              /
+            </span>
+            Youtube
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer red accent-4">
+    <div class="footer-copyright">
+      <div class="container">
+      Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas
+      </div>
+    </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
